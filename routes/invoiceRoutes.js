@@ -1,21 +1,3 @@
-// const express = require('express');
-// const router = express.Router();
-
-// const { createInvoice, getInvoices, cancelInvoice, downloadInvoice } = require('../controllers/invoiceController')
-
-// const protect = require('../middleware/authMiddleware')
-
-// router.post('/', protect, createInvoice)
-// router.get('/download/:id', downloadInvoice)
-// router.put('/cancel/:id', protect, cancelInvoice)
-// router.get('/:businessId', protect, getInvoices)
-
-
-// module.exports = router
-
-
-
-
 
 const express = require('express');
 const router = express.Router();

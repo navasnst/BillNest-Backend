@@ -17,7 +17,9 @@ const userSchema = new mongoose.Schema({
     businessName: {
         type: String,
         required: true
-    }
+    },
+    resetPasswordToken: String,
+    resetPasswordExpires: Date
 },
     { timestamps: true }
 )

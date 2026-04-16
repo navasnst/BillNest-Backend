@@ -199,7 +199,7 @@ exports.forgotPassword = async (req, res) => {
             }
         })
 
-        const resetURL = `http://localhost:5173/reset-password/${token}`
+        const resetURL = `https://bill-nest-frontend.vercel.app/reset-password/${token}`
 
         await transporter.sendMail({
             to: user.email,

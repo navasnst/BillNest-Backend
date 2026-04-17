@@ -21,6 +21,7 @@ const paymentRoutes = require("./routes/payment")
 const supplierRoutes = require("./routes/routes")
 const ledgerRoutes = require("./routes/ledgerRoutes")
 const capitalRoutes = require("./routes/capitalRouter")
+const quickInvoiceRoutes = require("./routes/quickInvoiceRoutes")
 
 
 const app = express()
@@ -51,6 +52,8 @@ app.use("/api/payments", paymentRoutes)
 app.use("/api/suppliers", supplierRoutes)
 app.use("/api/ledger", ledgerRoutes)
 app.use("/api/capital", capitalRoutes)
+app.use("/api", quickInvoiceRoutes)
+
 
 
 
